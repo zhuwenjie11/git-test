@@ -17,7 +17,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 @Controller
 @EnableWebMvc
 @EnableAutoConfiguration
-public class HelloGit {
+public class HelloGit { 
 
     @ResponseBody
     @RequestMapping(value = "/", method = RequestMethod.GET)
