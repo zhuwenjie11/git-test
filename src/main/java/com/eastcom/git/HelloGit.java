@@ -4,6 +4,9 @@ import java.util.Date;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.context.embedded.ConfigurableEmbeddedServletContainer;
+import org.springframework.boot.context.embedded.EmbeddedServletContainerCustomizer;
+import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -17,7 +20,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 @Controller
 @EnableWebMvc
 @EnableAutoConfiguration
-public class HelloGit { 
+public class HelloGit extends SpringBootServletInitializer implements EmbeddedServletContainerCustomizer { 
 
     @ResponseBody
     @RequestMapping(value = "/", method = RequestMethod.GET)
@@ -33,5 +36,10 @@ public class HelloGit {
     	System.out.println("start app!");
         SpringApplication.run(HelloGit.class, args);
     }
+
+	@Override
+	public void customize(ConfigurableEmbeddedServletContainer container) {
+		container.setPort(8822);
+	}
 
 }
