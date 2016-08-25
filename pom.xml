@@ -43,7 +43,7 @@
 
 			<plugin>
 				<artifactId>maven-resources-plugin</artifactId>
-				<executions>
+				<executions> 
 					<execution>
 						<id>copy-resources</id>
 						<phase>validate</phase>
