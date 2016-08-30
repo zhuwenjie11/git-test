@@ -2,7 +2,8 @@ FROM java:openjdk-8-jdk
 
 ADD git-test-1.0.jar /opt/spring-boot-maven-docker/
 
-EXPOSE 8080
+EXPOSE 8822
+
 
 WORKDIR /opt/spring-boot-maven-docker/
 
