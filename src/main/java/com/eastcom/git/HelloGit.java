@@ -29,7 +29,7 @@ public class HelloGit extends SpringBootServletInitializer implements EmbeddedSe
     }
     
     public HelloGit(){
-    	System.out.println("init bean HelloGit!");
+    	System.out.println("init bean HelloGit 44!");
     }
 
     public static void main(String[] args) throws Exception {
