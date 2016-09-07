@@ -25,7 +25,7 @@ public class HelloGit extends SpringBootServletInitializer implements EmbeddedSe
     @ResponseBody
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String helloWorld() {
-        return "Hello World: Spring-boot Sample Application using Maven and Docker , time : "+new Date();
+        return "Hello World 22: Spring-boot Sample Application using Maven and Docker , time : "+new Date();
     }
     
     public HelloGit(){
