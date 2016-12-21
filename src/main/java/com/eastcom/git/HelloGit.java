@@ -25,11 +25,11 @@ public class HelloGit extends SpringBootServletInitializer implements EmbeddedSe
     @ResponseBody
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String helloWorld() {
-        return "Hello World kubernetes: Spring-boot Sample Application using Maven and Docker , time : "+new Date();
+        return "Hello World kubernetes 12-21: Spring-boot Sample Application using Maven and Docker , time : "+new Date();
     }
     
     public HelloGit(){
-    	System.out.println("init bean HelloGit 44!");
+    	System.out.println("init bean kubernetes 12-21!");
     }
 
     public static void main(String[] args) throws Exception {
